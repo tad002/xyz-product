@@ -9,7 +9,7 @@ Author: Troy Dildine
 add_action( 'init', 'add_xyz_product' );
 
 function add_xyz_product() {
-	register_post_type( 'xyz_products',
+	register_post_type( 'xyz_product',
 		array(
 			'labels' => array(
 				'name' => 'Products',
@@ -22,7 +22,7 @@ function add_xyz_product() {
 				'view' => 'View',
 				'view_item' => 'View Product'
 			),
-			'public' => false,
+			'public' => true,
 			'show_ui' => true,
 			'show_in_menu' => true,
 			'supports' => array( 'title', 'editor', 'thumbnail' )
